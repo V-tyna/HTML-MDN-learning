@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <title>Внедрение аудио и видео</title>
+      <link href="style_mediapage.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      <header> 
+        <a href="file:///D:/%D0%92%D0%90%D0%9B%D0%AF/it/HTML/HTML5%20%D0%92%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B0%D1%83%D0%B4%D0%B8%D0%BE%20%D0%B8%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE/index.html"> 
+      <img src="dove.png" alt="Logo"></a>
+      <h1>HTML. МУЛЬТИМЕДИА И ВСТРАИВАНИЕ</h1>
+               <nav>
+            <form>
+                <input type="search" name="q" placeholder="Поиск...">
+                <input type="submit" value="Go!">
+            </form>
+        </nav>
+      </header>
+      <main><article>
+        <h2>Ниже вы можете просмотреть пример видео внедренный через HTML5.</h2>
+        <video controls width="320" height="240"
+            poster="mediafiles/poster.png">
+            <source src="mediafiles/rabbit320.mp4" type="video/mp4">
+            <source src="mediafiles/rabbit3201.webm" type="video/webm">
+            <track kind="subtitles" src="subtitles_en.vtt" srclang="en">
+            <p>Ваш браузер не поддерживает HTML5 формат видео. Используйте <a href="https://www.google.ru/intl/ru/chrome/?brand=CHBD&brand=IXYC&gclid=Cj0KCQiAyoeCBhCTARIsAOfpKxhHpiXXLOdBAeMM2w4P-eiHc4BE3bLBhpaM14IT1dDm3g9IVHofI3waAkipEALw_wcB&gclsrc=aw.ds">google chrome</a> веб-браузер или любой другой современный обновленный браузер</p>
+        </video>
+        </article>
+      <aside>
+          <h2>Аудиодорожка</h2>
+          <audio controls>
+              <source src="mediafiles/viper.mp3" type="audio/mp3">
+              <source src="mediafiles/viper1.ogg" type="audio/ogg">
+                <p>Ваш браузер не поддерживает HTML5 формат аудио. Используйте <a href="https://www.google.ru/intl/ru/chrome/?brand=CHBD&brand=IXYC&gclid=Cj0KCQiAyoeCBhCTARIsAOfpKxhHpiXXLOdBAeMM2w4P-eiHc4BE3bLBhpaM14IT1dDm3g9IVHofI3waAkipEALw_wcB&gclsrc=aw.ds">google chrome</a> веб-браузер или любой другой современный обновленный браузер</p>
+          </audio>
+          <section>
+              <figure>
+                  <h2>Картинки</h2>
+                <img src="mediafiles/favorite-1.jpg" alt="Просто красивая картинка"
+                width="200"
+                height="200"
+                title="Птица на ветке">
+                <figcaption> Картинка для украшения страницы, визуальный контент</figcaption>
+        </figure>
+          </section>
+      </aside>
+    </main>
+      <footer>Все права защищены самой надежной защитой &copy;</footer>
+        
+    </body>
+</html>

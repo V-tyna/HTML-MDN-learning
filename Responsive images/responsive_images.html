@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width">
+     <title> Отзывчивые изображения</title>  
+     <style>
+      html {
+        font-family: sans-serif;
+        background-color: gray;
+      }
+
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+      }
+
+      header {
+        background: url(header.jpg) no-repeat center;
+        height: 200px;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    </style> 
+    </head>
+    <body>
+      <header>
+        <img src="blossom.png" alt="Шапка сайта цветущая Дебби">
+      </header>
+      <main>
+        <section>
+      <h1> Цветение граптоверии Debbie</h1>
+      <p> Эта граптоверия цвела в конце апреля 2019 года.</p>
+       <img srcset="debbie-480w.jpg 480w,
+                    debbie-800w.jpg 800w"
+            sizes="(max-width: 600px) 480px,
+                   800px"
+            src="debbie-800w.jpg" alt="Граптоверия Дебби"> 
+      <p> Близкий ракурс цветоноса</p>
+      <picture>
+         <source media="(max-width: 799px)" srcset="blossom-cut-480w.jpg">
+         <source media="(max-width: 800px)" srcset="blossom-800w.jpg"> 
+         <img src="blossom-800w.jpg" alt="Цветонос граптоверии Дебби">
+      </picture>
+    </section>
+    </main>
+    </body>
+</html> 
